@@ -8,6 +8,7 @@ import Dialog, {
 } from 'material-ui/Dialog'
 import Typography from 'material-ui/Typography'
 import withRoot from '../components/withRoot'
+import StyledText from '../components/StyledText'
 
 const styles = {
   container: {
@@ -36,6 +37,7 @@ class Index extends Component {
   render () {
     return (
       <div style={styles.container}>
+        <StyledText>Foo Bar</StyledText>
         <Dialog open={this.state.open} onRequestClose={this.handleRequestClose}>
           <DialogTitle>Super Secret Password</DialogTitle>
           <DialogContent>
